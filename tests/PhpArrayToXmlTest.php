@@ -51,7 +51,7 @@ class PhpArrayToXmlTest extends TestCase
                 $missing .= "\n Method name missing: {$method_name}() for stub: {$stub}";
             }
         }
-        $this->assertEmpty($missing, $missing);
+        $this->assertEmpty($missing);
     }
 
     /** @test */

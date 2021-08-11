@@ -7,18 +7,17 @@
          convertNoticesToExceptions="true"
          convertWarningsToExceptions="true"
          processIsolation="false"
-         stopOnFailure="false"
-         syntaxCheck="false">
+         stopOnFailure="false">
 
-    <filter>
-        <whitelist>
+    <coverage processUncoveredFiles="true">
+        <include>
             <directory>./src</directory>
-            <exclude>
-                <directory>./vendor</directory>
-                <directory>./tests</directory>
-            </exclude>
-        </whitelist>
-    </filter>
+        </include>
+        <exclude>
+            <directory>./vendor</directory>
+            <directory>./tests</directory>
+        </exclude>
+    </coverage>
 
     <testsuites>
         <testsuite name="PhpArrayToXml Test Suite">
